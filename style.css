@@ -11,12 +11,17 @@
   --color-shap: #0f293d;
   --color-icons: #6c6f72;
 }
+body {
+  scroll-behavior: smooth;
+}
 header {
+  width: 100%;
   display: flex;
   justify-content: center;
   padding: 20px 0;
   z-index: 1000;
   background: #ffffff;
+  position: fixed;
 }
 .header {
   display: flex;
@@ -65,6 +70,7 @@ header {
   flex-direction: row;
   gap: 5px;
 }
+
 .header .link-icons i {
   color: var(--color-icons);
 }
@@ -73,6 +79,7 @@ header {
 }
 .container {
   padding: 35px;
+  padding-top: 150px;
   width: 95%;
   height: 100vh;
 }
