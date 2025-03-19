@@ -29,7 +29,7 @@ header {
   flex-direction: row;
   align-items: center;
   background: #fff;
-  width: 95%;
+  width: 85%;
   height: 70px;
   border-radius: 50px;
   justify-content: space-between;
@@ -78,9 +78,9 @@ header {
   color: var(--color-bt);
 }
 .container {
-  padding: 35px;
   padding-top: 150px;
-  width: 95%;
+  padding-left: 125px;
+  width: 85%;
   height: 100vh;
 }
 section {
@@ -168,6 +168,7 @@ section .info .data p {
 }
 section .img {
   position: relative;
+  right: -8%;
 }
 section .img img {
   width: 570px;
