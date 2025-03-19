@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Questrial", sans-serif;
+}
+:root {
+  --font-one: "Questrial", sans-serif;
+  --font-two: "Roboto", sans-serif;
+  --color-bt: #e87532;
+  --color-shap: #0f293d;
+  --color-icons: #6c6f72;
+}
+header {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  z-index: 1000;
+  background: #ffffff;
+}
+.header {
+  display: flex;
+  padding: 35px;
+  flex-direction: row;
+  align-items: center;
+  background: #fff;
+  width: 95%;
+  height: 70px;
+  border-radius: 50px;
+  justify-content: space-between;
+  box-shadow: 0px 0px 5px 0px #e2e2e2;
+}
+.header a {
+  text-decoration: none;
+  color: #000;
+}
+.header h1 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.menuNav ul {
+  display: flex;
+  flex-direction: row;
+  text-transform: none;
+  list-style: none;
+  gap: 20px;
+}
+.menuNav ul li #Home {
+  color: var(--color-bt);
+}
+.menuNav ul li span {
+  padding: 5px;
+}
+.header .link-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.header .link-icons i {
+  color: var(--color-icons);
+}
+.header .link-icons i:hover {
+  color: var(--color-bt);
+}
+.container {
+  padding: 35px;
+  width: 95%;
+  height: 100vh;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+section .info .text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+section .info .text p {
+  font-size: 1rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
+  color: color-mix(in srgb, black, transparent 20%);
+}
+section .info .btn {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+section .info .btn button {
+  letter-spacing: 0.5px;
+  font-family: var(--font-two);
+  font-size: 16px;
+  font-weight: 500;
+  width: 165px;
+  height: 50px;
+  border: 1px solid var(--color-bt);
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  cursor: pointer;
+}
+section .info .btn .btnOne {
+  background: var(--color-bt);
+  color: #fff;
+}
+section .info .btn .btnTow {
+  background: #fff;
+  color: var(--color-bt);
+}
+section .info .btn .btnTow:hover {
+  background: var(--color-bt);
+  color: #fff;
+}
+
+section .info .data {
+  display: flex;
+  margin-top: 35px;
+  flex-direction: row;
+  gap: 15px;
+}
+section .info .data h3 {
+  font-family: var(--font-two);
+  font-size: 40px;
+  line-height: 1.5;
+}
+section .info .data p {
+  font-family: var(--font-two);
+  font-size: 14px;
+  color: color-mix(in srgb, black, transparent 20%);
+}
+section .img {
+  position: relative;
+}
+section .img img {
+  width: 570px;
+}
+section .img .shepOne {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: color-mix(in srgb, var(--color-bt), transparent 85%);
+  top: -20px;
+  right: -20px;
+  animation: morphShape 10s linear infinite;
+  z-index: -1000;
+  -webkit-animation: morphShape 10s linear infinite;
+}
+section .img .shepTow {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: color-mix(in srgb, var(--color-shap), transparent 85%);
+  bottom: -20px;
+  left: -20px;
+  animation: morphShape 10s linear infinite;
+  z-index: -1000;
+  -webkit-animation: morphShape 10s linear infinite;
+}
+@keyframes morphShape {
+  0% {
+    border-bottom-left-radius: 45.088% 52.4096%;
+    border-bottom-right-radius: 30.912% 38.8816%;
+    border-top-left-radius: 40.7072% 47.5904%;
+    border-top-right-radius: 40.7072% 47.5904%;
+  }
+  50% {
+    border-bottom-left-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-top-left-radius: 60% 40%;
+    border-top-right-radius: 60% 40%;
+  }
+  100% {
+    border-bottom-left-radius: 40.7072% 47.5904%;
+    border-bottom-right-radius: 40.7072% 47.5904%;
+    border-top-left-radius: 28.088% 52.4096%;
+    border-top-right-radius: 71.912% 63.8816%;
+  }
+}
